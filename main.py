@@ -1,11 +1,3 @@
-# import Live as Live
-# from GuessGame import play_game
-# from MemoryGame import play_mem
-# from CurrencyRoulleteGame import play
-from Score import add_score
+import Live as Live
 
-
-# play_game()
-# play_mem()
-# play()
-add_score()
+Live.load_game()

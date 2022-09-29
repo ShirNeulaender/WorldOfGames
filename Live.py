@@ -20,3 +20,18 @@ def load_game():
 
     while difficulty not in range(1, 5):
         difficulty = input("Please choose a level of difficulty from 1 to 5: ")
+        
+        
+    if games == 1:
+        MemoryGame.play_mem(difficulty)
+        if bool(MemoryGame) is True:
+            Score.add_score(difficulty)
+
+    elif games == 2:
+        GuessGame.play_game(difficulty)
+        if bool(GuessGame) is True:
+            Score.add_score(difficulty)
+    else:
+        CurrencyRoulleteGame.play(difficulty)
+        if bool(CurrencyRoulleteGame) is True:
+            Score.add_score(difficulty)

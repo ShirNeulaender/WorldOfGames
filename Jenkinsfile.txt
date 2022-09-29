@@ -9,7 +9,7 @@ node{
 	     bat "python Test/e2e.py"
 	}
 	stage("Push"){
-	     bat "docker tag WOG_test shirneualender/WorldOfGames:v1"
-	     bat "docker push shirneualender/WorldOfGames:v1"
+	     bat "docker tag WOG_test shirNeualender/WorldOfGames:v1"
+	     bat "docker push shirNeualender/WorldOfGames:v1"
 	}
 }

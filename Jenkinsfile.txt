@@ -1,0 +1,15 @@
+node{
+	stage("Checkout"){
+	git"https://......
+	}
+	stage("Build"){
+	     bat "docker compose up -d"
+	}
+	stage("Test"){
+	     bat "python Test/e2e.py"
+	}
+	stage("Push"){
+	     bat "docker tag WOG_test shirneualender/WOG:v1"
+	     bat "docker push shirneualender/WOG:v1"
+	}
+}
